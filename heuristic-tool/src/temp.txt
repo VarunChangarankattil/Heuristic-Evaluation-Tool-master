@@ -1,0 +1,105 @@
+{index === 0 && resultData.websites[myIndex].quesCat === "E-Commerce" ?  (
+            <h6 className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === "E-Commerce" ).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+          
+        </div>
+      ))}
+            </h6>
+          ) : index === 1 ? (
+            <p className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === sectionName).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+        </div>
+      ))}
+            </p>
+          ) : index === 2 ? (
+            <p className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === sectionName).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+        </div>
+      ))}
+            </p>
+          ) : (
+            <p className="card-text">
+              Default content for all other sections.
+            </p>
+          )}
+
+
+
+
+
+
+
+
+
+
+{index === 0 && resultData.websites[myIndex].quesCat === "E-Commerce" ? (
+  // E-Commerce feedbacks rendering
+<h6 className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === "E-Commerce" ).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+          
+        </div>
+      ))}
+            </h6>
+) : index === 0 && resultData.websites[myIndex].quesCat === "E-Learning" ? (
+  // E-Learning feedbacks rendering
+<h6 className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === "E-Learning" ).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+          
+        </div>
+      ))}
+            </h6>
+) : index === 1 ? (
+  // Feedbacks rendering for index 1
+<p className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === sectionName).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+        </div>
+      ))}
+            </p>
+) : index === 2 ? (
+  // Feedbacks rendering for index 2
+<p className="card-text">
+              {feedbacks.filter((feedback) => feedback.quesSec === sectionName).map((feedback, index) => (
+        <div key={index}>
+          <h5>Q: {feedback.question}</h5>
+          <h5 style={{fontWeight: "initial"}}><span className="material-symbols-outlined" style={{color: 'yellowgreen'}}>
+warning
+</span>{feedback.feedback}</h5><br/>
+        </div>
+      ))}
+            </p>
+) : (
+  // Default content for all other sections
+<p className="card-text">
+              Default content for all other sections.
+            </p>
+)}
